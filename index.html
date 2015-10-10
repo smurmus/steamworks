@@ -28,9 +28,16 @@
 	<div class="form-group">
   		<label class="control-label">Enter the game name on Steam: </label>
   		<div class="input-group">
-    		<input type="text" class="form-control">
+    		<input type="text" class="form-control" id = "myText">
     		<span class="input-group-btn">
       			<button class="btn btn-default" type="button">Predict</button>
+
+      			<script>
+					function myFunction() {
+					    var x = document.getElementById("myText").value;
+					    document.getElementById("demo").innerHTML = x;
+					}
+				</script>
     		</span>
   		</div>
 	</div>
